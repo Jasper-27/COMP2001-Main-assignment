@@ -15,6 +15,26 @@
 <body>
 
 
+<?php
+$f_pointer=fopen("data.csv","r"); // file pointer
+
+$num = 0; 
+
+while(! feof($f_pointer)){
+  $ar=fgetcsv($f_pointer);
+  $num ++; 
+  echo "Line $num "; 
+
+  echo print_r($ar); // print the array 
+  echo "<br>";
+}
+?>
+
+
+
+
+
+
   <!-- Page Container -->
   <div class="w3-content" >
 
