@@ -16,6 +16,21 @@
 
 
 <?php
+
+// Needs to be its own class file 
+
+// Shir podcast: How to .. PHP classes to interact with database (Unit 4)
+
+// class instance{
+//   private street; 
+//   private town; 
+//   private age; 
+//   private monthYear; 
+//   private GridRef1;
+//   private GrifRef2;  
+// }
+
+
 $f_pointer=fopen("data.csv","r"); // file pointer
 
 $num = 0; 
@@ -28,6 +43,7 @@ while(! feof($f_pointer)){
   echo print_r($ar); // print the array 
   echo "<br>";
 }
+
 ?>
 
 
