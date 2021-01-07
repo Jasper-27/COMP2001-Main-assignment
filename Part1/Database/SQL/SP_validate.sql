@@ -7,9 +7,23 @@ AS
 BEGIN
 
     DECLARE  @validated int = 0; 
+    DECLARE @User int = null ; 
 
-    IF EXISTS ( SELECT * FROM dbo.Users WHERE email = @email and [password] = @password  )
+    SET @User = (SELECT Users.user_id
+                  FROM dbo.Users
+                 where email = @email and [password] = @password)
+
+    PRINT @User
+
+    IF (@User = null)
+        return 0; 
+    ELSE
     BEGIN
+        DECLARE @currentDate DATETIME = GETDATE(); 
+           
+        INSERT INTO dbo.Sessions(user_id, date_issued)
+        VALUES(@User, @currentDate); 
+
         set @validated = 1
     END
     
@@ -17,3 +31,4 @@ BEGIN
     
 
 END 
+GO
