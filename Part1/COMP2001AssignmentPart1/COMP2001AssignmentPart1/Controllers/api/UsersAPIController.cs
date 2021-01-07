@@ -39,6 +39,7 @@ namespace COMP2001AssignmentPart1.Controllers.api
             }
 
             return user;
+
         }
 
         // PUT: api/Users/5
