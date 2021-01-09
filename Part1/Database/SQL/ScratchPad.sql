@@ -54,10 +54,18 @@
 
 
 
-exec dbo.spUsers_update 24, null, null, null, "password2"
+ exec dbo.spUsers_update 23, null, null, null, "password1"
 
 
 
- select * from Users; 
- select * from Passwords; 
+-- select count([password])
+-- from Passwords
+-- where user_id = 24
+
+
+
+select * from dbo.vNumberLogins
+
+  select * from Users; 
+  select * from Passwords; 
  
