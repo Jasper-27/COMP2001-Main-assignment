@@ -1,3 +1,4 @@
+
 CREATE TABLE dbo.Users (
   user_id INT IDENTITY(1,1) NOT NULL PRIMARY KEY, 
   firstname VARCHAR(30) NOT NULL, 
@@ -6,8 +7,10 @@ CREATE TABLE dbo.Users (
   password VARCHAR(255) NOT NULL
   );
 
+
 CREATE TABLE dbo.Passwords (
     password_id INT IDENTITY(1,1) NOT NULL PRIMARY KEY, 
+    user_id int FOREIGN KEY REFERENCES Users(user_id), 
     password VARCHAR(30) NOT NULL, 
     date_changed DATETIME NOT NULL
 ); 
@@ -20,6 +23,3 @@ CREATE TABLE dbo.Sessions (
 ); 
 
   go 
-
-
-  select * from TABLE Users where user_id = 1; 
