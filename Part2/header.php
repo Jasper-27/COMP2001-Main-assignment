@@ -22,6 +22,9 @@
 <div class="topNav" >
     <a href="index.php">Home</a>
     <a href="data.php">Data</a>
+    
+
+    <h1 class="topNav_Title" >Jasper's Linked Data Application </h2>
 </div>
 
 <br>

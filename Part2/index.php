@@ -6,13 +6,14 @@
     <script src="javascript.js"></script>
     <script src="main.js"></script>
 
-    <title>Password Strength Checker</title>
+    <title>Home - Stop and Search Plymouth</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="myStyleSheet.css">
     <!-- <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> --> 
     <!-- <link rel="stylesheet" href="w3.css"> -->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300&display=swap" rel="stylesheet">
+    <script src="chartMin.js"></script>
 </head>
 <style>
 
@@ -25,7 +26,7 @@
 
 
   <!-- Page Container -->
-  <div class="w3-content" >
+  <div class="w3-content" align="center">
 
 
     <div align="center">
@@ -34,7 +35,7 @@
 
 
     <!-- Links --> 
-    <div class="container" align="left" >
+    <div class="container" align="left">
 
     <h2> Data: </h2> <a href="https://plymouth.thedata.place/dataset/plymouth-stop-search-data/resource/57e2507e-7342-4cb1-b284-014caaa463a2" target="_blank">Plymouth stop and search by www.dataplymouth.co.uk.</a> 
 
@@ -42,7 +43,7 @@
     </div>
 
     <!-- Project vision --> 
-    <div class="container" align="left">
+    <div class="container" align="left" >
       <h3> Project vision </h3>
       <p>
         This is where the project vision will go

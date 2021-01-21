@@ -24,6 +24,7 @@ namespace COMP2001AssignmentPart1.Controllers
         [HttpGet]
         public async Task<ActionResult<IEnumerable<User>>> GetUsers()
         {
+            //Code runs here on get 
             return await _context.Users.ToListAsync();
         }
 
@@ -31,12 +32,15 @@ namespace COMP2001AssignmentPart1.Controllers
         [HttpGet("{id}")]
         public async Task<ActionResult<User>> GetUser(int id)
         {
+            // code run after getting user
             var user = await _context.Users.FindAsync(id);
 
             if (user == null)
             {
                 return NotFound();
             }
+
+            
 
             return user;
         }

@@ -1,7 +1,7 @@
 
 html,body,h1,h2,h3,h4,h5,h6,p {
   font-family: "Open Sans", sans-serif;
-  color: rgb(235, 235, 235);
+  color: rgb(5, 5, 5);
 }
 
 h1{
@@ -11,7 +11,7 @@ h1{
 
 /*the style of the body */
 body {
-  background-color: #2c2c2c;
+  background-color: #ffffff;
 }
 
 
@@ -49,7 +49,7 @@ body {
 
 /* Add a black background color to the top navigation */
 .topNav {
-  background-color: rgb(15, 15, 15);
+  background-color:rgb(0, 89, 255); 
   overflow: hidden;
   font-size: 200px;
 }
@@ -62,6 +62,15 @@ body {
   padding: 14px 16px;
   text-decoration: none;
   font-size: 17px;
+}
+
+.topNav_Title {
+  float: right;
+  color: #000000;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: x-large;
 }
 
 /* Change the color of links on hover */
@@ -78,16 +87,41 @@ body {
 
 
 
-/* responsive, form small screens */
-@media (max-width: 775px) {
-  .results-table {
-    float: center;
-    min-width: 100%;
-    }
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  overflow-y:scroll;
+  /* overflow-x:auto;  */
+  max-height:500px;
+  display: block;
+  float: center;
+  width: 700px;
+}
 
-  .pageTitle {
-    font-size: 40px;
-  }
+tbody{
+  overflow-x:auto;
+}
 
+th {
+  background-color: rgba(0, 248, 83, 0.5);
+  position: sticky;
+  top: 0;
+
+}
+
+
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: center;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color:  rgba(187, 145, 31, 0.5) ;
+}
+
+tr:nth-child(odd) {
+  background-color: rgba(50, 38, 221, 0.5);
 }
 
