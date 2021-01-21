@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "GiNrTQ091I6iT0CuQ4K7ncqcQvcR/0NkpYTJFOtIXn1hFFZKs8OczGQ05Rj16iKFaCAFniDWwsXWpJ3x3SY+zw==",
+  "dgSpecHash": "5EOzQPv9YVNzA3aCjx7+TLShWdfxFZUOjDn36uVux+M+zJiPHF+20ntoxNR1H4LXmVAAaP3knSGyA4scZVvqxQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Jasper\\GitHub\\COMP2001-Linked-data-application\\Part1\\COMP2001AssignmentPart1\\COMP2001AssignmentPart1\\COMP2001AssignmentPart1.csproj",
+  "projectFilePath": "C:\\Users\\Jasper\\GitHub\\COMP2001-Main-assignment\\Part1\\COMP2001AssignmentPart1\\COMP2001AssignmentPart1\\COMP2001AssignmentPart1.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Jasper\\.nuget\\packages\\entityframework\\6.4.4\\entityframework.6.4.4.nupkg.sha512",
     "C:\\Users\\Jasper\\.nuget\\packages\\microsoft.aspnetcore.html.abstractions\\2.2.0\\microsoft.aspnetcore.html.abstractions.2.2.0.nupkg.sha512",

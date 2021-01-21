@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Jasper\\GitHub\\COMP2001-Linked-data-application\\Part1\\COMP2001AssignmentPart1\\COMP2001AssignmentPart1\\COMP2001AssignmentPart1.csproj": {}
+    "C:\\Users\\Jasper\\GitHub\\COMP2001-Main-assignment\\Part1\\COMP2001AssignmentPart1\\COMP2001AssignmentPart1\\COMP2001AssignmentPart1.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Jasper\\GitHub\\COMP2001-Linked-data-application\\Part1\\COMP2001AssignmentPart1\\COMP2001AssignmentPart1\\COMP2001AssignmentPart1.csproj": {
+    "C:\\Users\\Jasper\\GitHub\\COMP2001-Main-assignment\\Part1\\COMP2001AssignmentPart1\\COMP2001AssignmentPart1\\COMP2001AssignmentPart1.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Jasper\\GitHub\\COMP2001-Linked-data-application\\Part1\\COMP2001AssignmentPart1\\COMP2001AssignmentPart1\\COMP2001AssignmentPart1.csproj",
+        "projectUniqueName": "C:\\Users\\Jasper\\GitHub\\COMP2001-Main-assignment\\Part1\\COMP2001AssignmentPart1\\COMP2001AssignmentPart1\\COMP2001AssignmentPart1.csproj",
         "projectName": "COMP2001AssignmentPart1",
-        "projectPath": "C:\\Users\\Jasper\\GitHub\\COMP2001-Linked-data-application\\Part1\\COMP2001AssignmentPart1\\COMP2001AssignmentPart1\\COMP2001AssignmentPart1.csproj",
+        "projectPath": "C:\\Users\\Jasper\\GitHub\\COMP2001-Main-assignment\\Part1\\COMP2001AssignmentPart1\\COMP2001AssignmentPart1\\COMP2001AssignmentPart1.csproj",
         "packagesPath": "C:\\Users\\Jasper\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Jasper\\GitHub\\COMP2001-Linked-data-application\\Part1\\COMP2001AssignmentPart1\\COMP2001AssignmentPart1\\obj\\",
+        "outputPath": "C:\\Users\\Jasper\\GitHub\\COMP2001-Main-assignment\\Part1\\COMP2001AssignmentPart1\\COMP2001AssignmentPart1\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
