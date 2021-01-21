@@ -11,13 +11,13 @@
   <link rel="stylesheet" href="myStyleSheet.css">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300&display=swap" rel="stylesheet">
   <link rel = "stylesheet" href = "http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.css" />
-  <script src="chartMin.js"></script>
+  <script src="Resources/chartMin.js"></script>
 
 
     
 <?php
 
-  $fname = "theData.csv"; 
+  $fname = "Resources/theData.csv"; 
 
   function csvToJson($fname) {
     // open csv file
@@ -44,7 +44,7 @@
   }
 
 
-  $f_pointer=fopen("theData.csv","r"); // file pointer
+  $f_pointer=fopen($fname,"r"); // file pointer
 
 
   //Getting the ages for the chart 
