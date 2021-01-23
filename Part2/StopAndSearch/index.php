@@ -37,8 +37,8 @@ while(! feof($f_pointer)){
         echo "\"$header[0] \" : \"$ar[0]\", ";
         echo "\"SaS:$header[1] \" : \"$ar[1]\", "; 
         echo "\"SaS:$header[2] \" : \"$ar[2]\", "; 
-        echo "\"SaS:$header[3] \" : \"$ar[3]\", "; 
-        echo "\"SaS:$header[4] \" : \"$ar[4]\" "; 
+        echo "\"SaS:$header[3] \" : \"$ar[3]\" "; 
+        // echo "\"SaS:$header[4] \" : \"$ar[4]\" "; 
 
         echo "}"; 
     }
