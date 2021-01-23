@@ -2,7 +2,7 @@
 header("Content-Type: application/json"); 
 
 echo "{ \"@context\" : { \"Place\" : \"http://schema.org\", \"SaS\" : \"http://web.socem.plymouth.ac.uk\" }, \"Place\" : [ "; 
-$fname = "theData.csv"; 
+$fname = "../theData.csv"; 
 
 //Opening the file
 $f_pointer=fopen($fname,"r");

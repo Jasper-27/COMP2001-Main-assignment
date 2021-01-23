@@ -2,53 +2,23 @@
 <html>
 
 <head>
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  <title>Home - Stop and Search Plymouth</title>
+  <title>Data - Stop and Search Plymouth</title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <!-- <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> -->
-  <!-- <link rel="stylesheet" href="w3.css"> -->
   <link rel="stylesheet" href="myStyleSheet.css">
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300&display=swap" rel="stylesheet">
-  <link rel = "stylesheet" href = "http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.css" />
   <script src="Resources/chartMin.js"></script>
-
 
     
 <?php
 
-  $fname = "Resources/theData.csv"; 
+  $fname = "../theData.csv"; 
 
-  // function csvToJson($fname) {
-  //   // open csv file
-  //   if (!($fp = fopen($fname, 'r'))) {
-  //     die("Can't open file...");
-  //   }
-
-  //   //read csv headers
-  //   $key = fgetcsv($fp,"1024",",");
-
-  //   echo $key; 
-
-  //   // parse csv rows into array
-  //   $json = array();
-  //   while ($row = fgetcsv($fp,"1024",",")) {
-  //     $json[] = array_combine($key, $row);
-  //   }
-
-  //   // release file handle
-  //   fclose($fp);
-
-  //   // encode array to json
-  //   return json_encode($json);
-  // }
 
 
   $f_pointer=fopen($fname,"r"); // file pointer
 
 
   //Getting the ages for the chart 
-
   $under10 = 0; 
   $under20 = 0; 
   $under30 = 0; 
@@ -89,20 +59,6 @@
     }
 
   }
-
-
-// echo $under10;  
-// echo "<br/>";
-// echo $under20; 
-// echo "<br/>";
-// echo $under30;
-// echo "<br/>"; 
-// echo $under40;
-// echo "<br/>"; 
-// echo $under50;
-// echo "<br/>";
-// echo $over50; 
- 
 
 
   function printTable($fname){
