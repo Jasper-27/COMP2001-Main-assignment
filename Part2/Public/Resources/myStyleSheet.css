@@ -4,31 +4,14 @@ html,body,h1,h2,h3,h4,h5,h6,p {
   color: rgb(5, 5, 5);
 }
 
-h1{
-  font-size: xx-large;
-}
-
 
 /*the style of the body */
 body {
   background-color: #ffffff;
 }
 
-
-.button2 {
-  background-color: red;
-  border: none;
-  color: white;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
-  cursor: pointer;
-}
 .button {
-  background-color: rgb(81, 2, 228);
+  background-color: rgba(201, 128, 235, 0.8);
   border: none;
   color: white;
   padding: 15px 32px;
@@ -36,20 +19,19 @@ body {
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
-  margin: 4px 2px;
+  margin: auto 2px;
   cursor: pointer;
 }
 
 .button:hover {
-  background-color: darkgreen;
+  background-color:  rgba(238, 194, 75, 0.8);
 }
 
 
 
-
-/* Add a black background color to the top navigation */
+/* Add a background color to the top navigation */
 .topNav {
-  background-color:rgb(0, 89, 255); 
+  background-color:rgb(247, 111, 111); 
   overflow: hidden;
   font-size: 200px;
 }
@@ -64,25 +46,11 @@ body {
   font-size: 17px;
 }
 
-.topNav_Title {
-  float: right;
-  color: #000000;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: x-large;
-}
 
 /* Change the color of links on hover */
 .topNav a:hover {
   background-color: #ddd;
   color: rgb(41, 41, 41);
-}
-
-/* Add a color to the active/current link */
-.topNav a.active {
-  background-color: #4CAF50;
-  color: white;
 }
 
 
@@ -91,11 +59,10 @@ table {
   font-family: arial, sans-serif;
   border-collapse: collapse;
   overflow-y:scroll;
-  /* overflow-x:auto;  */
   max-height:500px;
   display: block;
   float: center;
-  width: 1000px;
+  width: 950px;
 }
 
 tbody{
@@ -103,13 +70,11 @@ tbody{
 }
 
 th {
-  background-color: rgba(0, 248, 83, 0.5);
+  background-color: rgba(43, 255, 114, 0.8);
   position: sticky;
   top: 0;
 
 }
-
-
 
 td, th {
   border: 1px solid #dddddd;
