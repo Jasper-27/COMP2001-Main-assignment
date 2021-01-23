@@ -58,16 +58,16 @@ body {
 table {
   font-family: arial, sans-serif;
   border-collapse: collapse;
-  overflow-y:scroll;
+  overflow-y: scroll;
   max-height:500px;
   display: block;
   float: center;
   width: 950px;
 }
-
+/* 
 tbody{
   overflow-x:auto;
-}
+} */
 
 th {
   background-color: rgba(43, 255, 114, 0.8);

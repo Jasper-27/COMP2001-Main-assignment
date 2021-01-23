@@ -13,10 +13,7 @@
 
   $fname = "../theData.csv"; 
 
-
-
   $f_pointer=fopen($fname,"r"); // file pointer
-
 
   //Getting the ages for the chart 
   $under10 = 0; 
@@ -126,17 +123,19 @@
 
     <br/>
 
-    <div class="container" width="200px" height="200px">
+    <div  class="container" >
       <h2>Age of suspect in a piechart</h2>
       <canvas id="myChart" style="display: block; float: center;"></canvas> 
     </div>
         
   </div>
 
-  
+  <!-- Adds a little bit of a buffer at the bottom -->
+  <br/>
+  <br/>
+  <br/>
 
 </div>
-
 
 
 
@@ -186,8 +185,6 @@
       }
   });
 </script>
-
-
 
 
 </body>
