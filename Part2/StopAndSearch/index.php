@@ -30,15 +30,15 @@ while(! feof($f_pointer)){
         echo  "\"@type\": \"Place\",";
         echo "\"geo\" : { "; 
             echo "\"@type\" : \"GeoCoordinates\", "; 
-            echo "\"latitude\" : \"$ar[4]\", " ; 
-            echo "\"longitude\" :  \"$ar[5]\" "; 
+            echo "\"latitude\" : \"$ar[5]\", " ; 
+            echo "\"longitude\" :  \"$ar[6]\" "; 
             echo "},";  
 
         echo "\"$header[0] \" : \"$ar[0]\", ";
         echo "\"SaS:$header[1] \" : \"$ar[1]\", "; 
         echo "\"SaS:$header[2] \" : \"$ar[2]\", "; 
-        echo "\"SaS:$header[3] \" : \"$ar[3]\" "; 
-        //echo "\"mdw:$header[4] \" : \"$ar[4], "; echo "<br/>";
+        echo "\"SaS:$header[3] \" : \"$ar[3]\", "; 
+        echo "\"SaS:$header[4] \" : \"$ar[4]\" "; 
 
         echo "}"; 
     }
