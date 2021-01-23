@@ -2,30 +2,16 @@
 <html>
 
 <head>
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  <title>Home - Stop and Search Plymouth</title>
+  <title>data</title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <!-- <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> -->
-  <!-- <link rel="stylesheet" href="w3.css"> -->
-  <link rel="stylesheet" href="myStyleSheet.css">
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300&display=swap" rel="stylesheet">
-  <link rel = "stylesheet" href = "http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.css" />
-  <script src="Resources/chartMin.js"></script>
-
-
     
 <?php
 
 
 
-echo "{ \"@context\" : { \"Place\" : \"http://schema.org\", \"SaS\" : \"http://web.socem.plymouth.ac.uk\" }, \"Place\" : [ { \"@type\" : \"Place\","; 
+echo "{ \"@context\" : { \"Place\" : \"http://schema.org\", \"SaS\" : \"http://web.socem.plymouth.ac.uk\" }, \"Place\" : [ "; 
 
-echo   "\"geo\": {
-    \"@type\" : \"GeoCoordinates\",
-    \"latitude\" : ,
-    \"longitude\" : 
-}, " ; echo "<br/>"; 
 
 
 
@@ -46,16 +32,32 @@ echo   "\"geo\": {
         $header = $ar; 
        
     }else{
-        echo "\"$header[0] \" : \"$ar[0]\", "; echo "<br/>";
-        echo "\"mdw:$header[1] \" : \"$ar[1], "; echo "<br/>"; 
-        echo "\"mdw:$header[2] \" : \"$ar[2], "; echo "<br/>";
-        echo "\"mdw:$header[3] \" : \"$ar[3], "; echo "<br/>";
-        //echo "\"mdw:$header[4] \" : \"$ar[4], "; echo "<br/>";
+
+        if ($line == 2){
+            echo "{"; echo "<br/>" ; 
+           
+        }else{
+            echo ", <br/> {"; echo "<br/>" ; 
+
+        }
+
+       
+
+        echo  "\"@type\": \"Place\","; echo "<br/>" ; 
         echo "\"geo\" : { ";  echo "<br/>" ;
-        echo "\"@type\" : \"GeoCoordinates\", "; 
-        echo "\"latitude\" : \"$ar[4]\", " ; 
-        echo "\"longitude\" :  \"$ar[5]\", "; 
-        echo "},";  
+            echo "\"@type\" : \"GeoCoordinates\", "; 
+            echo "\"latitude\" : \"$ar[4]\", " ; 
+            echo "\"longitude\" :  \"$ar[5]\" "; 
+            echo "},";  
+
+        echo "\"$header[0] \" : \"$ar[0]\", "; echo "<br/>";
+        echo "\"SaS:$header[1] \" : \"$ar[1]\", "; echo "<br/>"; 
+        echo "\"SaS:$header[2] \" : \"$ar[2]\", "; echo "<br/>";
+        echo "\"SaS:$header[3] \" : \"$ar[3]\" "; echo "<br/>";
+        //echo "\"mdw:$header[4] \" : \"$ar[4], "; echo "<br/>";
+
+        echo "}"; 
+       
 
 
     }
@@ -68,7 +70,7 @@ echo   "\"geo\": {
 
 }
 
-echo "]"
+echo "]}"
 
 
 ?>
