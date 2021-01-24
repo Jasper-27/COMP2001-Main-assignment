@@ -27,11 +27,11 @@
 --exec dbo.spUsers_update 10, null, null, "jasper.j.cox@gmail.com", null; 
 
 
+ DECLARE @out1 int
 
+EXEC  @out1 = dbo.spUsers_validate "Hannah@brown.net", "pas3sword2"; 
 
---  EXEC dbo.spUsers_validate "Hannah@brown.net", "password2"; 
-
-
+print @out1
 -- delete from dbo.Users;   -- Deletes at the end 
 
 
@@ -54,7 +54,7 @@
 
 
 
- exec dbo.spUsers_update 23, null, null, null, "password1"
+--  exec dbo.spUsers_update 23, null, null, null, "password1"
 
 
 

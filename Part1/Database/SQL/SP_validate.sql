@@ -15,7 +15,7 @@ BEGIN
 
     PRINT @User
 
-    IF (@User = null)
+    IF (@User is null)
         return 0; 
     ELSE
     BEGIN
