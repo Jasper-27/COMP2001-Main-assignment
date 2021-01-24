@@ -22,10 +22,25 @@ namespace COMP2001AssignmentPart1.Controllers
 
         // GET: api/Users
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<User>>> GetUsers()
+        public async Task<ActionResult<IEnumerable<User>>> GetUsers(User user)
         {
-            //Code runs here on get 
-            return await _context.Users.ToListAsync();
+            ////Code runs here on get 
+            Console.WriteLine( await _context.Users.ToListAsync());
+
+            Dictionary<string, bool> output = new Dictionary<string, bool>(1);
+           
+
+            if (_context.spUsers_validate(user) == 1) {
+                output.Add("verified", true);
+                return Ok(output); 
+
+            };
+
+            output.Add("verified", false);
+            return Ok(output); 
+
+
+
         }
 
         // GET: api/Users/5
@@ -51,28 +66,29 @@ namespace COMP2001AssignmentPart1.Controllers
         [HttpPut("{id}")]
         public async Task<IActionResult> PutUser(int id, User user)
         {
-            if (id != user.UserId)
-            {
-                return BadRequest();
-            }
+            
 
-            _context.Entry(user).State = EntityState.Modified;
+            //_context.Entry(user).State = EntityState.Modified;
 
-            try
-            {
-                await _context.SaveChangesAsync();
-            }
-            catch (DbUpdateConcurrencyException)
-            {
-                if (!UserExists(id))
-                {
-                    return NotFound();
-                }
-                else
-                {
-                    throw;
-                }
-            }
+            //try
+            //{
+            //    await _context.SaveChangesAsync();
+            //}
+            //catch (DbUpdateConcurrencyException)
+            //{
+            //    if (!UserExists(id))
+            //    {
+            //        return NotFound();
+            //    }
+            //    else
+            //    {
+            //        throw;
+            //    }
+            //}
+
+            _context.spUsers_update(id, user);
+
+
 
             return NoContent();
         }
@@ -83,25 +99,33 @@ namespace COMP2001AssignmentPart1.Controllers
         [HttpPost]
         public async Task<ActionResult<User>> PostUser(User user)
         {
-            _context.Users.Add(user);
-            try
-            {
-                await _context.SaveChangesAsync();
-            }
-            catch (DbUpdateException)
-            {
-                if (UserExists(user.UserId))
-                {
-                    return Conflict();
-                }
-                else
-                {
-                    throw;
-                }
-            }
+            //_context.Users.Add(user);
+            //try
+            //{
+            //    await _context.SaveChangesAsync();
+            //}
+            //catch (DbUpdateException)
+            //{
+            //    if (UserExists(user.UserId))
+            //    {
+            //        return Conflict();
+            //    }
+            //    else
+            //    {
+            //        throw;
+            //    }
+            //}
 
-            return CreatedAtAction("GetUser", new { id = user.UserId }, user);
+            
+
+            _context.spUsers_register(user);
+
+            //return CreatedAtAction("GetUser", new { id = user.UserId }, user);
+            return Ok(); 
         }
+
+
+
 
         // DELETE: api/Users/5
         [HttpDelete("{id}")]
@@ -113,10 +137,13 @@ namespace COMP2001AssignmentPart1.Controllers
                 return NotFound();
             }
 
-            _context.Users.Remove(user);
-            await _context.SaveChangesAsync();
+            //_context.Users.Remove(user);
+            //await _context.SaveChangesAsync();
 
-            return user;
+            _context.spUsers_delete(user);
+
+            //success 
+            return StatusCode(204); 
         }
 
         private bool UserExists(int id)

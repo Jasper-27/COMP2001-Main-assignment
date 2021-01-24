@@ -12,7 +12,6 @@ namespace COMP2001AssignmentPart1.Models
         public string Firstname { get; set; }
         public string Lastname { get; set; }
         public string Email { get; set; }
-        [JsonIgnore]
         public string Password { get; set; }
         
     }
